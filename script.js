@@ -2,10 +2,10 @@
 let filmes = [
 
     {
-    titulo: "Interestellar",
-    imagem: "Imagens/Interstellar_Filme.png",
-    descricao: "Um grupo de astronautas viaja através de um buraco de minhoca em busca de um novo lar para a humanidade."
-    }
+    titulo: "CIDADE DE DEUS",
+    imagem: "CidadedeDeus.jpg",
+    descricao: "Cidade de Deus refere-se principalmente a um bairro e favela no Rio de Janeiro, mas tornou-se mundialmente famoso devido à obra literária e cinematográfica de mesmo nome." 
+  }
     
     ];
     
@@ -13,9 +13,9 @@ let filmes = [
     let series = [
     
     {
-    titulo: "Stranger Things",
-    imagem: "Imagens/StrangerThings_Filme.jpg",
-    descricao: "Um grupo de crianças enfrenta forças sobrenaturais e experimentos secretos em uma pequena cidade."
+    titulo: "IRMANDADE",
+    imagem: "IRMANDADE.jpg",
+    descricao: "A trama de Irmandade (série e o filme de 2026) gira em torno do conflito moral entre a lei e o crime organizado em São Paulo."
     }
 
     
