@@ -1,55 +1,28 @@
-// FILMES
-let filmes = [
-
-    {
-    titulo: "CIDADE DE DEUS",
-    imagem: "CidadedeDeus.jpg",
-    descricao: "Cidade de Deus refere-se principalmente a um bairro e favela no Rio de Janeiro, mas tornou-se mundialmente famoso devido à obra literária e cinematográfica de mesmo nome." 
-  }
-    
-    ];
-    
-    // SÉRIES
-    let series = [
-    
-    {
-    titulo: "IRMANDADE",
-    imagem: "IRMANDADE.jpg",
-    descricao: "A trama de Irmandade (série e o filme de 2026) gira em torno do conflito moral entre a lei e o crime organizado em São Paulo."
-    }
-
-    
-    ];
-    
-    function mostrar(){
-    
-    let listaFilmes = document.getElementById("listaFilmes");
-    let listaSeries = document.getElementById("listaSeries");
-    
-    filmes.forEach(function(f){
-    
-    listaFilmes.innerHTML += `
-    <div class="card">
-    <img src="${f.imagem}">
-    <h3>${f.titulo}</h3>
-    <p>${f.descricao}</p>
-    </div>
-    `;
-    
-    });
-    
-    series.forEach(function(s){
-    
-    listaSeries.innerHTML += `
-    <div class="card">
-    <img src="${s.imagem}">
-    <h3>${s.titulo}</h3>
-    <p>${s.descricao}</p>
-    </div>
-    `;
-    
-    });
-    
-    }
-    
-    mostrar();
+<!DOCTYPE HTML>
+<HTML LANG=``PT-BR``>
+<HEAD>
+<META CHARSET=``UTF-8``>
+<TITLE>MODASMR </TITLE>
+<LINKREL=``STYLESHEET``HREF=``STYLE.CSS``>
+</HEAD>
+<BODY>
+<HEADER>
+<H1>MODASMR</H1>
+<p> AS MRLHORES ROUPAS VOCE ENCONTRA AQUI</p>
+</HEADER>
+<SECTION CLASS=``INSTAGRAM``>
+<IMG SRC=``INSTAGRAM.PNG``
+ALT=``INSTAGRAM``>
+<P>@MODASMR</P>
+</SECTION>
+<SECTION CLASS=``GOVERNO``>
+<H2>GOVERNO DO ESTADO</H2>
+<IMG SRC=``SAO PAULO.PNG``
+ALT=``GOVERNO SP``>
+      <P>AQUI VOCE ENCONTRA SEUS ESTUDOS</P>
+<SECTION>
+<FOOTER>
+   <P> C 2026-SITE DESENVOLVIDO PARA AULA DE TI</P>
+                                     </FOOTER>
+</BODY>
+</HTMML>
