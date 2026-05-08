@@ -1,28 +1,55 @@
-<!DOCTYPE HTML>
-<HTML LANG=``PT-BR``>
-<HEAD>
-<META CHARSET=``UTF-8``>
-<TITLE>MODASMR </TITLE>
-<LINKREL=``STYLESHEET``HREF=``STYLE.CSS``>
-</HEAD>
-<BODY>
-<HEADER>
-<H1>MODASMR</H1>
-<p> AS MRLHORES ROUPAS VOCE ENCONTRA AQUI</p>
-</HEADER>
-<SECTION CLASS=``INSTAGRAM``>
-<IMG SRC=``INSTAGRAM.PNG``
-ALT=``INSTAGRAM``>
-<P>@MODASMR</P>
-</SECTION>
-<SECTION CLASS=``GOVERNO``>
-<H2>GOVERNO DO ESTADO</H2>
-<IMG SRC=``SAO PAULO.PNG``
-ALT=``GOVERNO SP``>
-      <P>AQUI VOCE ENCONTRA SEUS ESTUDOS</P>
-<SECTION>
-<FOOTER>
-   <P> C 2026-SITE DESENVOLVIDO PARA AULA DE TI</P>
-                                     </FOOTER>
-</BODY>
-</HTMML>
+// FILMES
+let filmes = [
+
+      {
+      titulo: "Interestellar",
+      imagem: "Imagens/Interstellar_Filme.png",
+      descricao: "Um grupo de astronautas viaja através de um buraco de minhoca em busca de um novo lar para a humanidade."
+      }
+      
+      ];
+      
+      // SÉRIES
+      let series = [
+      
+      {
+      titulo: "Stranger Things",
+      imagem: "Imagens/Strangerthings_serie.jpg",
+      descricao: "Um grupo de crianças enfrenta forças sobrenaturais e experimentos secretos em uma pequena cidade."
+      }
+  
+      
+      ];
+      
+      function mostrar(){
+      
+      let listaFilmes = document.getElementById("listaFilmes");
+      let listaSeries = document.getElementById("listaSeries");
+      
+      filmes.forEach(function(f){
+      
+      listaFilmes.innerHTML += `
+      <div class="card">
+      <img src="${f.imagem}">
+      <h3>${f.titulo}</h3>
+      <p>${f.descricao}</p>
+      </div>
+      `;
+      
+      });
+      
+      series.forEach(function(s){
+      
+      listaSeries.innerHTML += `
+      <div class="card">
+      <img src="${s.imagem}">
+      <h3>${s.titulo}</h3>
+      <p>${s.descricao}</p>
+      </div>
+      `;
+      
+      });
+      
+      }
+      
+      mostrar();
